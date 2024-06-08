@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/telaDetalhesPaletras_imageView_logoUcsal"
+        android:layout_width="146dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintBottom_toTopOf="@+id/telaDetalhesPalestras_textView_titulo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.147"
+        app:srcCompat="@drawable/logo_ucsal" />
+
+    <ImageView
+        android:id="@+id/telaDetalhesPaletras_imageView_logoSemoc"
+        android:layout_width="251dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="52dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/telaDetalhesPaletras_imageView_logoUcsal"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo_semoc" />
+
+    <TextView
+        android:id="@+id/telaDetalhesPalestras_textView_titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/telaDetalhesPaletras_imageView_logoSemoc" />
+
+    <TextView
+        android:id="@+id/telaDetalhesPalestras_textView_descricao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/telaDetalhesPalestras_textView_titulo" />
+
+    <Button
+        android:id="@+id/telaDetalhesPalestras_button_verPalestrante"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:text="Ver Palestrante"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/telaDetalhesPalestras_textView_descricao" />
+</androidx.constraintlayout.widget.ConstraintLayout>
